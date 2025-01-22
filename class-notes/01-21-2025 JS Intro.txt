@@ -1,0 +1,168 @@
+
+
+Computer: 
+
+
+compute, 
+produce,
+analyze,
+calculate,
+storage,
+test,
+data,
+
+
+input -> process -> output
+
+Computer: Software + Hardware
+
+Hardware: devices
+
+Software: written with programming languages
+
+Input devices: mouse, keyboard
+
+Processing: CPU
+
+
+
+
+BINARY: 
+ones and zeros (ON and OFF)
+
+computer process only ones and zeros
+
+Primitive counting system:
+
+
+
+Counting system:
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+10
+100
+1000
+10000
+
+
+Computer - Binary Language:
+0, 1
+
+
+Human way 			Computer way
+0 					00000000
+1 					00000001
+2 					10
+3 					11
+4 					100
+
+
+
+Storage Units
+1 bit 		-> 0 or 1
+1 byte 		-> 8 bits
+1 kilobeyte -> 1024 bytes34895739456
+
+
+001
+1
+2
+4
+8
+16
+32
+64
+128
+256
+512
+1024
+
+
+
+
+664 bytes 
+
+this is just more texts.
+
+
+105 -> 
+
+Dog -> 
+
+D -> 68  -> 01000100
+o -> 111 -> 01101111
+g -> 103 -> 01100111
+
+
+010001000110111101100111
+
+
+A != a
+
+65 	-> 01000001
+97  -> 01100001
+
+
+" A" != "A"
+
+0010000001000001 01000001
+
+
+Connect with friends and the world around you on Facebook.
+
+
+
+Programming Language:
+JavaScript, TypeScript, Java, C#, Go, C++, Python, Swift, PHP, Perl, Ruby
+
+
+Code  - source code: written in a programming language
+
+Syntax: This is grammar rules for learning a programming language
+
+const name = 'John';
+name = 'James'; // complain - compile error - syntax error - compilation issue
+
+
+
+
+Execute - execution - run the code
+Compile - compilation - compiler - make sure the code does not have syntax error
+
+
+
+Can I get 1 oz milk?
+
+
+ES6 - ES2015 Biggest and nicest release for JS
+
+EcmaScript = JavaScript
+
+
+Cypress (JS) + Playwright (JS, TS, Java, C#, Python)
+
+
+TypeScript is just superset of JavaScript
+TypeScript is compiled version of JavaScript
+Type-safety
+
+
+
+Compiled languages: TypeScript, Java, C# (syntax heavy - strict rules)
+statically-typed
+
+Interpreted languages: JavaScript (more flexible syntax)
+dynamically-typed
+
+Ways to run JS code
+1. Use node.js
+2. Use browser
+3. CodeRunner Extension (not recommended for work but for learning)
+
+
+
+
+Duplicate a line in VSCode
+MAC: option + shift + down arrow
+Windows: alt + shift + down arrow
+
+cmd (MAC) = ctrl (Windows)
