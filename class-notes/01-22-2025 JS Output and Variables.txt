@@ -1,0 +1,156 @@
+
+Output Statements:
+console.log() function
+-This function is used to debug your code
+Debug: monitor the code to find issues in your program
+
+-This function can take text data like string in single or double quotes
+'Hello'
+"Hello"
+
+-This function can also take data variables
+
+
+-   hyphen or dash (minus)
+/   forward slash
+\   backward slash
+;   semi-colon
+:   colon
+()  parantheses
+{}  curly braces 
+[]  square brackets 
+,   coma 
+.   dot, period
+!   NOT 
+@
+#
+$
+%
+^  caret
+&  AND
+|  OR 
+*  wildcard
+_  underscore
++
+=
+''
+""
+``  backticks
+>   greater than
+<   less than 
+>=
+<=
+?
+
+
+Keywords:
+const, let, var, class, static, function, interface
+
+
+Statements: every single line of code 
+-Each statement ends with a ;
+
+Comments: Explain your code
+// single line comments 
+
+
+''''    this is not allowed 
+""""    this is not allowed 
+
+'""'    this is allowed 
+"''"    this is allowed
+
+
+
+
+
+
+
+String data - values 
+-They are always stored in single or double quotes
+'John'
+"James"
+
+
+Number data - values
+-They should not be stored with quotes 
+
+let number = 5;
+let num = '5'; 
+
+number + 2 -> 7
+num + 2    -> '52'
+
+Concatenation
+'5' + '5'   -> '55'
+3 + '5'     -> '35'
+'2' + 2     -> '22'
+
+
+Addition
+5 + 5       -> 10
+
+
+Tricky part:
+3 + 3 + '5'   -> '65'
+
+'2' + 1 + 1 + 1   -> '2111'
+
+
+'7' + (5 + 2)     -> '77'
+
+
+OOO
+1. Exponentiation
+2. Parantheses
+3. Multiplication/Division 
+4. Addition/Subtraction
+
+
+undefined data type:
+default type when you declare a variable without assigning a value
+
+let address; // undefined
+
+
+1. Initialization
+let name = 'John';
+let age = 45;
+
+2. Declaring a variable 
+let name;
+let age;
+
+3. Assignment or re-assignment 
+name = 'John';
+age = 45;
+
+
+let and const are ES6 features (added in 2015)
+
+
+RULES: syntax rules you MUST follow (Error)
+Conventions: Good to follow - unwritten rules 
+
+
+let age;                  true                   
+let AGE;                  true but not preferred
+let shift$;               true
+let number of students;   false
+let _firstLetter;         true 
+let 8students;            false
+let isWeatherSnowing#;    false 
+let @balance;             false
+
+= is the assignment operator 
+
+let city = 'Chicago';
+
+
+
+const name, age;          false
+let n1 = 45, n2;          true
+const num1 = 45, num2;    false
+let x, let y;             false
+let a; let b;             true but not preferred
+let i1; i2;               seems to be true (compiler) but throws error when executed           
