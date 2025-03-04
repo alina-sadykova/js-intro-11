@@ -58,9 +58,14 @@ console.log(cartoonDogs);
 let hasPluto = false;
 for (let i = 0; i < cartoonDogs.length; i++) {
   if (cartoonDogs[i] === "Pluto") hasPluto = true;
-  // OPTION 2
+  // // OPTION 2
   // if (cartoonDogs[i].includes("Pluto")) hasPluto = true;
 }
+// // OPTION 3 - for of
+// for (let dog of cartoonDogs) {
+//   if (dog === "Pluto") hasPluto = true;
+// }
+
 console.log(hasPluto);
 
 console.log("\n--------TASK10--------\n");
@@ -73,10 +78,17 @@ for (let i = 0; i < cartoonCats.length; i++) {
     ? (hasGarfieldAndFelix = true)
     : (hasGarfieldAndFelix = false);
 
-  // OPTION 2
+  // // OPTION 2
   // cartoonCats[i].includes("Garfield") && cartoonCats[i].includes("Felix")
   //   ? (hasGarfieldAndFelix = true)
   //   : (hasGarfieldAndFelix = false);
+}
+
+// OPTION 3 - for of
+for (let cat of cartoonCats) {
+  cat === "Garfield" && cat === "Felix"
+    ? (hasGarfieldAndFelix = true)
+    : (hasGarfieldAndFelix = false);
 }
 console.log(hasGarfieldAndFelix);
 
@@ -87,6 +99,11 @@ console.log(numbers);
 for (let i = 0; i < numbers.length; i++) {
   console.log(numbers[i]);
 }
+
+// // OPTION 2 - for of
+// for (let number of numbers) {
+//   console.log(number);
+// }
 
 console.log("\n--------TASK12--------\n");
 let objects = ["Pen", "notebook", "Book", "paper", "bag", "pencil", "Ruler"];
