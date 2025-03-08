@@ -151,3 +151,110 @@ function getRecurringSessionId(programId, itemsPerPage) {
   console.log("Recurring session was not found... returning null");
   return recurringSessionId;
 }
+
+/*
+Requirement:
+Write a function named as firstPos() which takes an 
+array as an argument and returns the first positive 
+element when invoked.
+NOTE: Assume you will not be given an empty array, 
+and it contains only number elements.
+NOTE: Assume there is at least one positive element in 
+the given array.
+ 
+Examples:
+firstPos([0, 3, -9,  5, 8])  -> 3
+firstPos([-2, 0, -7, 10, -5])  -> 10
+firstPos([1, 2, 3, -2])                         -> 1
+*/
+
+function firstPos(array) {
+  return array.filter((item) => item > 0)[0];
+}
+console.log(firstPos([0, 3, -9, 5, 8]));
+console.log(firstPos([-2, 0, -7, 10, -5]));
+console.log(firstPos([1, 2, 3, -2]));
+
+/*
+Requirement:
+Write a function named as lastNeg() which takes an 
+array as an argument and returns the last negative 
+element when invoked.
+NOTE: Assume you will not be given an empty array, 
+and it contains only number elements.
+NOTE: Assume there is at least one negative element in 
+the given array.
+ 
+Examples:
+lastNeg([0, 3, -9,  5, 8])  -> -9
+lastNeg([-2, 0, -7, 10, -5])  -> -5
+lastNeg([1, 2, 3, -2])                         -> -2
+*/
+function lastNeg(arr) {
+  return arr.filter((item) => item < 0).at(-1);
+}
+console.log(lastNeg([0, 3, -9, 5, 8]));
+console.log(lastNeg([-2, 0, -7, 10, -5]));
+console.log(lastNeg([1, 2, 3, -2]));
+
+/*
+Requirement:
+Write a function named as firstLongest() which takes 
+an array as an argument and returns the longest 
+element when invoked.
+NOTE: Assume you will not be given an empty array, 
+and it contains only string elements.
+NOTE: If there are 2 element having the longest count of 
+characters, always return the first occurrence.
+ 
+Examples:
+firstLongest(["red", "blue", "yellow", "white"])  -> 
+"yellow"
+firstLongest(["Apple", "Banana", "Orange"])  -> 
+"Banana"
+firstLongest(["purple", "yellow", "orange"])  -> 
+"purple"
+*/
+function firstLongest(array) {
+  let longest = "";
+  for (let word of array) {
+    if (word.length > longest.length) longest = word;
+  }
+  return longest;
+  return array.reduce((acc, curr) => (curr.length > acc.length ? curr : acc));
+}
+console.log(firstLongest(["red", "blue", "yellow", "white"]));
+console.log(firstLongest(["Apple", "Banana", "Orange"]));
+console.log(firstLongest(["purple", "yellow", "orange"]));
+
+/*
+Requirement:
+Write a function named as min() which takes an array 
+as an argument and returns the greatest element when 
+invoked.
+NOTE: Assume you will not be given an empty array, 
+and it contains only number elements.
+ 
+Examples:
+min([0, 3,  5, 8])  -> 0
+min([-2, 0, -7, 10, -5])  -> -7
+min([1, 2, 3, 15])                 -> 1
+*/
+function minNum(arr) {
+  let smallest = arr[0];
+  arr.forEach((item) => {
+    if (item < smallest) smallest = item;
+  });
+  return smallest;
+  return arr.reduce((smallestEl, currEl) =>
+    currEl < smallestEl ? currEl : smallestEl
+  );
+}
+console.log(minNum([0, 3, 5, 8]));
+console.log(minNum([-2, 0, -7, 10, -5]));
+console.log(minNum([1, 2, 3, 15]));
+
+const commonElements = (arr1, arr2) => {
+  return arr1.filter((el) => arr2.includes(el));
+};
+console.log(commonElements([10, 20, 30, 40, 50], [20, 40, 50]));

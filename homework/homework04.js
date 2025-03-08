@@ -66,6 +66,8 @@ for (let i = 0; i < cartoonDogs.length; i++) {
 //   if (dog === "Pluto") hasPluto = true;
 // }
 
+// // OPTION 4
+
 console.log(hasPluto);
 
 console.log("\n--------TASK10--------\n");
