@@ -382,25 +382,19 @@ mostRepeated(["TechGlobal"]) 				-> "TechGlobal"
 */
 function mostRepeated(arr) {
   // --- OPTION 1
-  let count = 0;
-  let element = arr[0];
-  arr.forEach((el) => {
-    if (element === el) {
-      element = el;
-      count++;
+  let mostCount = 0;
+  let mostReapetedElement = arr[0]; //123
+  for (let i = 0; i < arr.length; i++) {
+    let count = 0;
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[i] === arr[j]) count++;
     }
-  });
-  return element;
-
-  // --- OPTION 2
-  return arr.reduce((count, currEl) => {
-    let element = arr[0];
-    if (element === currEl) {
-      element = currEl;
-      count++;
+    if (count > mostCount) {
+      mostCount = count;
+      mostReapetedElement = arr[i];
     }
-    return element;
-  }, 0);
+  }
+  return mostReapetedElement;
 }
 console.log(mostRepeated([4, 7, 4, 4, 4, 23, 23, 23])); // 			-> 4
 console.log(
@@ -408,3 +402,6 @@ console.log(
 ); // 	-> "pen"
 console.log(mostRepeated([10])); // 					-> 10
 console.log(mostRepeated(["TechGlobal"])); // 				-> "TechGlobal"
+console.log(
+  mostRepeated(["123", "pen", "pencil", "pen", "123", "abc", "pen", "pencil"])
+); // 	-> "pen"
