@@ -27,3 +27,5 @@ setTimeout(() => {
 setTimeout(() => {
   console.log("C");
 }, 750);
+
+console.log(typeof undefined);
