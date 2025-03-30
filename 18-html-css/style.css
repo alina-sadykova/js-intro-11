@@ -1,0 +1,21 @@
+main {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  color: darkred;
+  background-color: lightyellow;
+}
+#full-name {
+  color: limegreen;
+}
+h2 {
+  color: darkred;
+}
+a {
+  color: blue;
+}
+p {
+  background-color: silver;
+}
