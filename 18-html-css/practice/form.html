@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      form {
+        width: 800px;
+        background-color: rgb(234, 216, 183);
+        margin: 0 auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      label {
+        font-weight: bold;
+      }
+      td {
+        padding: 5px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .favoriteChoice label {
+        font-weight: 400;
+      }
+      .inputField textarea {
+        width: 80%;
+      }
+      .inputLabel {
+        width: 300px;
+        vertical-align: top;
+      }
+      .checkboxLabel label {
+        font-weight: 400;
+      }
+      select {
+        width: 200px;
+      }
+      p {
+        margin: 0;
+      }
+      table,
+      td {
+        border: 1px solid;
+      }
+      .btn {
+        padding: 7px 20px;
+        border-radius: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: blue;
+        color: white;
+      }
+      .btn[disabled] {
+        background-color: rgb(147, 139, 139);
+        color: black;
+      }
+      .buttons {
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personal Information</h1>
+    <form action="submit">
+      <table>
+        <tbody>
+          <tr>
+            <td class="inputLabel"><label for="full-name">Name:</label></td>
+            <td class="inputField">
+              <input
+                size="50"
+                id="full-name"
+                type="text"
+                placeholder="Full name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="inputLabel"><label for="email">Email:</label></td>
+            <td class="inputField">
+              <input size="50" id="email" type="email" placeholder="Email" />
+            </td>
+          </tr>
+          <tr>
+            <td class="inputLabel"><label for="password">Password:</label></td>
+            <td class="inputField">
+              <input size="50" id="password" type="password" />
+            </td>
+          </tr>
+          <tr>
+            <td class="inputLabel">
+              <label for="email">Approval Required:</label>
+              <p>Click on the button or text to check/uncheck</p>
+            </td>
+
+            <td class="inputField checkboxLabel">
+              <input id="approval" type="checkbox" />
+              <label for="approval">Do you approve?</label>
+            </td>
+          </tr>
+          <tr>
+            <td class="inputLabel">
+              <label for="email">Pick Your Favorite:</label>
+              <p>Click on the button or text to select</p>
+            </td>
+            <td>
+              <div class="favoriteChoice">
+                <input id="choiceA" type="radio" name="'pickFavorite" checked />
+                <label for="choiceA">Choice A</label>
+              </div>
+              <div class="favoriteChoice">
+                <input id="ChoiceB" type="radio" name="'pickFavorite" />
+                <label for="ChoiceB">Choice B</label>
+              </div>
+              <div class="favoriteChoice">
+                <input id="ChoiceC" type="radio" name="'pickFavorite" />
+                <label for="ChoiceC">Choice C</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="inputLabel"><label for="email">Popup Menu:</label></td>
+            <td class="inputField">
+              <select name="" id="">
+                <option value="texas">Texas -- TX</option>
+                <option value="missouri">Missouri -- MO</option>
+                <option value="kansas">Kansas -- KS</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="inputLabel">
+              <label for="email">List:</label>
+              <p>
+                Setup Options:
+                <li>Number of rows to display</li>
+                <li>Allow Multi-select</li>
+              </p>
+            </td>
+            <td class="inputField">
+              <select multiple name="" id="">
+                <option value="texas">California -- CA</option>
+                <option value="missouri">Colorado -- CO</option>
+                <option value="kansas">Connecticut -- CN</option>
+                <option value="kansas">Kansas -- KS</option>
+                <option value="kansas">Missouri -- MO</option>
+                <option value="kansas">Florida -- FL</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="inputLabel">
+              <label for="km">Field Ignored by KM</label>
+            </td>
+            <td class="inputField">
+              <input id="km" type="number" />
+            </td>
+          </tr>
+          <tr>
+            <td class="inputLabel">
+              <label for="message">Text Area</label>
+            </td>
+            <td class="inputField">
+              <textarea
+                rows="8"
+                placeholder="Leave your message here..."
+              ></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button class="btn" type="submit">Save</button>
+        <button class="btn" type="button">Cancel</button>
+        <button class="btn" type="reset" disabled>Resize</button>
+      </div>
+    </form>
+  </body>
+</html>

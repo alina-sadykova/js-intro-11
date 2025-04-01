@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <style>
+      main {
+        width: 400px;
+        margin: 0 auto;
+      }
+      form {
+        border: 1px solid;
+        padding: 20px;
+      }
+      input {
+        margin-top: 5px;
+      }
+
+      .container {
+        width: 100%;
+      }
+      label {
+        margin-top: 20px;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      label,
+      select,
+      textarea,
+      button {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Forms</h1>
+
+      <form action="submit">
+        <div class="container">
+          <div class="box">
+            <label for="fname">First name</label>
+            <input id="fname" type="text" placeholder="First Name" />
+          </div>
+          <div>
+            <label for="lname">Last name</label>
+            <input id="lname" type="text" placeholder="Last Name" />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email address" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" />
+          </div>
+          <div>
+            <h3>What is your favorite color?</h3>
+            <input id="blue" type="checkbox" />
+            <label for="blue">Blue</label>
+            <input id="red" type="checkbox" />
+            <label for="red">Red</label>
+            <input id="green" type="checkbox" />
+            <label for="green">Green</label>
+          </div>
+          <div>
+            <h3>Will you attend tomorrow's class?</h3>
+            <label for="yes">Yes</label>
+            <input id="yes" type="radio" name="'classAttendance" checked />
+            <label for="no">No</label>
+            <input id="no" type="radio" name="'classAttendance" />
+          </div>
+          <div>
+            <h3>Choose your country</h3>
+            <select name="" id="">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="mexico">Mexico</option>
+            </select>
+          </div>
+          <div>
+            <h3>Choose your favorite travel destinations? Multiple Choice</h3>
+            <select multiple name="" id="">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="mexico">Mexico</option>
+              <option value="mexico">UK</option>
+            </select>
+          </div>
+          <div>
+            <h3>We would like to hear from you:</h3>
+
+            <textarea
+              rows="8"
+              placeholder="Leave your message here..."
+            ></textarea>
+          </div>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
