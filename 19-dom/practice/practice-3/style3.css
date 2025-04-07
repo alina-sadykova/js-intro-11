@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  margin: 0 auto;
+  width: 800px;
+  background-color: rgb(229, 241, 244);
+  border: 1px solid grey;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+img {
+  height: 200px;
+}
+.highlighted-text {
+  color: rgba(28, 111, 152, 0.875);
+}
+.header {
+  font-weight: bold;
+}
+.highlighted-text-2 {
+  color: rgba(149, 169, 191, 0.854);
+}
+.company-subtitle {
+  font-size: 18px;
+}
+.job-description {
+  color: rgb(79, 79, 79);
+}
+h1,
+h2 {
+  font-weight: 400;
+}
+.section-container {
+  margin-bottom: 40px;
+}

@@ -29,3 +29,7 @@ setTimeout(() => {
 }, 750);
 
 console.log(typeof undefined);
+
+const data = { name: "John", age: 30 };
+const jsonData = JSON.stringify(data);
+console.log(jsonData);

@@ -194,12 +194,13 @@ getCommons( ["Javascript", "is", "fun"], ["Javascript", "C#", "Python"] ) 	-> ["
 getCommons( ["Javascript", "C#", "C#"], ["Python", "C#", "C++"] ) 	-> ["C#"]
 */
 function getCommons(arr1, arr2) {
+  let result = [];
   for (let el of arr1) {
     for (let item of arr2) {
-      if (el === item) return el;
+      if (el === item && !result.includes(el)) result.push(el);
     }
   }
-  return [];
+  return result;
 }
 console.log(getCommons(["Javascript", "is", "fun"], ["abc", "xyz", "123"])); //		-> []
 console.log(
