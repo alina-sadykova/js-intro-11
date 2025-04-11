@@ -1,0 +1,148 @@
+04-08-2025 STLC - Defect Life Cycle
+
+STLC: Software Testing Life Cycle
+
+
+Let's say, we're in sprint-26 this week.
+
+Refinement meetings to discuss the PBIs for future sprints (27-28-29-30).
+We discuss the requirements/acceptance criterias.
+
+
+1. Read and understand requirements
+2. Planning: what kind of tests this PBIs requires
+3. Write test cases
+4. Environment set up or make sure developers merge their changes in test environment
+5. Execution: 
+	-Run your test cases manually
+	-Report unexpected issues (defect/bug tickets)
+	-Write scripts - automation (playwright-js or cypress-js, playwright-ts)
+6. Closure: Reports/Documentation
+
+
+
+
+
+TRADITIONAL WAY
+Test Case 1: Validate Mock Interviews is accessible
+Go to https://www.techglobal-training.com/
+Click on "Mock Interviews" in the header
+Validate a login form is visible
+
+Test Case 2: Validate Mock Interviews form allows logging in
+Go to https://www.techglobal-training.com/
+Click on "Mock Interviews" in the header
+Enter username as "TechGlobal"
+Enter password as "Test1234!"
+Select languages as "JavaScript"
+Click on "LOGIN" button
+Validate user is on "https://www.techglobal-training.com/mock-interviews/javascript"
+Validate the main heading of the page is "JavaScript Mock Interviews"
+
+Test Case 3: Validate user cannot login if they do not select language
+Go to https://www.techglobal-training.com/
+Click on "Mock Interviews" in the header
+Enter username as "TechGlobal"
+Enter password as "Test1234!"
+Click on "LOGIN" button
+Validate the error message "Please select a language!" is visible
+ 
+
+
+
+BDD WAY - Behavior Driven Development - Gherkin Language
+This is used if your company uses Cucumber
+
+
+Feature: Mock Interviews
+
+Scenario: Validate Mock Interviews is accessible
+Given I am on https://www.techglobal-training.com/
+When I click on "Mock Interviews" in the header
+Then I should see a login form
+
+Given -> pre-condition
+When  -> actions
+Then  -> assertions/validations
+And   -> used for repeated keywords
+
+
+
+Scenario: Validate Mock Interviews form allows logging in
+Given I am on https://www.techglobal-training.com/
+When I click on "Mock Interviews" in the header
+And I enter username as "TechGlobal"
+And enter password as "Test1234!"
+And I select language as "JavaScript"
+And I click on "LOGIN" button
+Then I should see user is on "https://www.techglobal-training.com/mock-interviews/javascript"
+And I should see the main heading of the page is "JavaScript Mock Interviews"
+
+
+
+200 test cases
+160-170 automated scripts
+30-40 manual
+
+
+
+CREATE BUG TICKET:
+
+What do you include in a bug ticket?
+Description: high-level summary of the issue you found
+
+Details:
+	Environment: most of the time Test/QA/IT or Dev/STG/UAT or PROD
+
+	Steps to reproduce:
+	Expected and Actual result:
+
+	Attachments: screenshots, video
+	Logs from Database or Developer tools
+
+
+Bug Life Cycle?
+1. New - Opened
+2. Assigned -  to a dev
+3. In progress 
+4. Dev done
+5. Retest
+6. if passed -> fixed -> closed
+	if not -> 
+	7. Reassigned - to a dev
+	8. follow the same steps until it is fixed and passed.
+
+
+
+Severity: how impactful the bug is considered the application.
+Priority: how soon the plan is to fic the bug
+
+Discuss Bugs for different states:
+High-Medium-Low
+Critical-Major-Minor-Cosmetic
+
+
+
+RTM: Requirement Traceability Matrix
+Used to make sure each acceptance criteria is covered by at leas one test case
+
+
+
+BUG ticket: 
+
+Portal footer is not responsive - broken for smaller screens
+
+Description:
+This is in all environment including PROD.
+
+
+Steps to reproduce:
+1. Go to portal https://portal.ashcare.com/landing
+2. Check footer
+3. Check footer in smaller screens 
+
+
+Expected: Footer should be responsive for all common screen sizes
+Actual: Footer is broken and not responsive
+
+See screenshot for details.

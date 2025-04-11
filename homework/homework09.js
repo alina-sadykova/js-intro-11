@@ -187,6 +187,7 @@ function countOccurrencesOfCharacters(str) {
   for (let char in chars) {
     result += chars[char] + char;
   }
+
   return result;
 }
 console.log(countOccurrencesOfCharacters("")); //-> ""
@@ -274,37 +275,41 @@ findUniques([-1, -2], [1, 2]) 	-> [-1, -2, 1, 2]
 */
 function findUniques(arr1, arr2) {
   if (arr1.length === 0 && arr2.length === 0) return [];
-  else if (arr1.length === 0) {
-    const newArr2 = [];
-    for (let i = 0; i < arr2.length; i++) {
-      if (!newArr2.includes(arr2[i])) newArr2.push(arr2[i]); //1 = 1 1/
-    }
-    return newArr2;
-  } else if (arr2.length === 0) {
-    const newArr1 = [];
-    for (let i = 0; i < arr1.length; i++) {
-      if (!newArr1.includes(arr1[i])) newArr1.push(arr1[i]);
-    }
-    return newArr1;
-  } else {
-    const uniqueArr = [];
-    arr1.forEach((el) => {
-      if (!arr2.includes(el)) uniqueArr.push(el);
-    });
-    arr2.forEach((el) => {
-      if (!arr1.includes(el)) {
-        uniqueArr.push(el);
-      }
-    });
-    return uniqueArr;
-
-    // ANOTHER WAY: but still not solving.
-    // const mergedArray = [...arr1, ...arr2];
-    // const uniqueArr = mergedArray.filter((value, index, array) => {
-    //   return array.indexOf(value) === array.lastIndexOf(value);
-    // });
-    // return uniqueArr;
+  const uniques = [];
+  const mergedArray = [...arr1, ...arr2];
+  for (let num of mergedArray) {
+    if (!(arr1.includes(num) && arr2.includes(num)) && !uniques.includes(num))
+      uniques.push(num);
   }
+
+  return uniques;
+
+  // ANOTHER WAY
+  // if (arr1.length === 0 && arr2.length === 0) return [];
+  // else if (arr1.length === 0) {
+  //   const newArr2 = [];
+  //   for (let i = 0; i < arr2.length; i++) {
+  //     if (!newArr2.includes(arr2[i])) newArr2.push(arr2[i]); //1 = 1 1/
+  //   }
+  //   return newArr2;
+  // } else if (arr2.length === 0) {
+  //   const newArr1 = [];
+  //   for (let i = 0; i < arr1.length; i++) {
+  //     if (!newArr1.includes(arr1[i])) newArr1.push(arr1[i]);
+  //   }
+  //   return newArr1;
+  // } else {
+  //   const uniqueArr = [];
+  //   arr1.forEach((el) => {
+  //     if (!arr2.includes(el)) uniqueArr.push(el);
+  //   });
+  //   arr2.forEach((el) => {
+  //     if (!arr1.includes(el)) {
+  //       uniqueArr.push(el);
+  //     }
+  //   });
+  //   return uniqueArr;
+  // }
 }
 
 console.log(findUniques([], [])); //-> []

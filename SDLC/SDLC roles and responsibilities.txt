@@ -1,0 +1,107 @@
+
+==== SDLC Roles and Responsibilities =====
+Client
+PO / PM / BA
+System Architect
+UI/UX designers
+Development Team: DEV + QA
+DevOps: DevOps Engineers, Cloud Engineers
+End Users
+Security Engineers, Data Engineers, CyberSecurity Team, Performance team, Analytics Team
+SCRUM TEAM:
+PO
+SM
+Development Team: Developers, Testers
+Some additional team members:
+UI/UX designer
+BA
+PM
+Frontend Developers: JS, HTML, CSS, React/Angular
+Backend Developers: Database Tables etc, services/APIs. C#/Java/Ruby/Go/TS
+ROLES:
+PO - Product Owner
+-They are the communicator/bridge between the development team and the stakeholders/client
+-Documentation of all the needs/future features
+	-Smaller tasks: PBIs/User Story/Tickets to be added to Product Backlog
+	-Each PBIs/User Story/Tickets must have clear acceptance criterias
+	-If acceptance criteria/requirements are not clear, development will ask about it in refinement or they can schedule a meeting with PO.
+SM - Scrum Master:
+-Their main job is to increase communication/collaboration in the team.
+-They also remove impediments/obstacles/blockers.
+-They also facilitate most of the Scrum ceremonies such as Sprint Planning, Daily Stand up, Sprint Retro
+-They schedule all the meetings, updates everyone etc.
+-They support 2-3-4 teams
+Epic: One big feature to add to product such Cart/Payments/Login/Delivery Types
+Epic = from which PO creates smaller PBIs
+Cart feature will be broken into smaller PBIs/User Story/Ticket
+As a user I should see a cart when I visit the app - 5
+	AC1: An icon should be in header
+	AC2: This icon should show a digit when products are added
+	AC2: This icon digit should be updated if products are deleted or added
+As a user I should be able to add product to cart
+As a user I should be able to delete product from the cart
+As a user I should be able to update the quantity of the product in the cart
+CEREMONIES:
+Refinement/Grooming meetings:
+-PO drives this meeting
+-1 to 3 times in a sprint
+-30-60 minutes
+-Refine/clarify the requirements of the future sprint PBIs/User Story/Ticket
+-Development team estimates the PBIs/User Story/Ticket. They assign a point to ready PBIs after clarifying all the acceptance criteria with PO.
+Daily Stand up:
+-SM organizes/drives this meeting
+-Every day, usually in the morning
+-15-30 minutes
+-UPDATES: What team members did yesterday, what is the plan for today and is there any questions/blockers or help needed.
+Retrospective:
+-SM organizes/drives this meeting
+-1 time in a sprint (at the beginning of the next sprint)
+-60 minutes
+-What was good, not good and what can be improved? CTA to do in the future sprints.
+CTA: Call to Action
+Sprint Planning:
+-PO drives this meeting
+-1 time in a sprint (at the very beginning)
+-60 minutes
+-Assign tasks to development team members
+Sprint Review/DEMO:
+-Driven by PO/Development Team
+-1 time in a sprint (at the end of the sprint)
+-30-60 minutes
+-Demonstaring completed PBIs to stakeholders for the last sprint
+PBI1 	-> 8 		DEV1
+PBI2 	-> 5 		DEV2
+PBI3	-> 5 		DEV4
+PBI4	-> 3 		DEV2
+PBI5	-> 8 		DEV3
+PBI6	-> 3 		DEV5
+PBI7	-> 2 		DEV5
+BUG1 	-> 2 		DEV1		
+BUG2 	-> 1 		DEV4	
+BUG3 	-> 3 		DEV4
+40 POINTS
+20 QA1 		-> PBI1, PBI2, PBI3, BUG1
+20 QA2 		-> PBI4, PBI5, PBI6, PBI7, BUG2, BUG3
+Capacity: how many resources you have in the development team
+Velocity: how much work you finish in average in a sprint
+Team: 5 Devs, 2 QAs
+Sprint: 2 weeks - 10 working days - each day considered as 1 point
+Capacity: 7
+Velocity: 70
+PBI = Product Backlog Item
+Every PBI/User Story/Ticket has lots of AC.
+AC = Acceptance Criteria: detailed steps to consider PBI is completed.
+SCRUM ROLES
+SCRUM CEREMONIES
+ARTIFACTS:
+Product Backlog:
+	-All the tasks/PBI/User Story/Ticket we're planning to complete as a team
+	-PO is responsible for the backlog
+	-PO moves high priority PBIs to the top
+Sprint Backlog: Active Sprint which includes only the PBIs needs to be completed in the current sprint.
+Increment: What is completed in the sprint.
+Burndown Chart: Graphic that shows how much of the work you completed
+DOR: Definition of Ready: This is a PBI refined and ready to be pulled into sprint
+DOD: Definition of Done: This is a PBI developed-tested-marked as done by PO.
+PBIs, Sprint boards, backlog boards: JIRA, Azure DevOps
+Less used: Click up, Asana, Trello

@@ -1,0 +1,120 @@
+
+
+04-09-2025 Testing Types
+
+
+Functional vs Non-Functional Testing Types 
+
+
+Functional -> Verify that a user can login to your app with valid credentials
+Non-Functional -> Verify 10 thousands of people can checkout at the same time
+Non-Functional -> Can thousands of people start Mock Interview at the same time
+
+Non-Functional: Security, performance
+
+Performance Testing: JMeter, BlazeMeter, LoadRunner, NeoLoad
+
+
+FUNCTIONAL TESTING: Unit, Component, Integration, Smoke, Regression, Sanity, 
+User Acceptance Testing (UAT), E2E, A/B  
+
+UAT: Alpha + Beta Testing
+
+
+1. White-Box Testing: Unit Testing
+	-Testing the units directly against the developer source code - you have to read and understand developer code
+	-These tests are stored in developer's repo.
+	-Mostly written by developers but testers can also involve.
+	-Developers test their individual components with Unit Tests.
+	
+
+2. Black-Box Testing
+	-Testing developer's code indirectly in a separate repository.
+	-Testers will not need to understand developer's source code.
+
+	Smoke: Testing most critical functionalities of the app to make sure it is ready for heavy tests. 5-20 Most critical-main-major test cases.
+	Smoke tests run daily.
+
+	Smoke tests are usually automated.
+
+	Regression: Testing all the features.
+	Usually we run Regression after a new changes being merged.
+	We make sure new changes (new feature) do not break existing ones.
+
+	Regression tests are also automated. (There will be some manual effort as well).
+
+	Sanity: Usually executed whenever a bug is fixed. You test the fix and just a bit more testing around the same feature or component.
+
+	NOTE: We testers usually run Smoke, Regression and Sanity testing in Dev and QA environments. Smoke can also be executed in STG.
+
+
+	UAT: User Acceptance Testing
+	Usually performed in STG. We don't do it in DEV or QA environments.
+
+	Alpha Testing: Company invites some UAT testers to office and they run tests for the application. Internal
+
+	Beta Testing: Company make beta release and publish new features to public and thousands of people uses the new features and provide feedback. External
+
+
+	1. Unit Testing: smallest unit (calculation function)
+		Too many tests running fast
+	2. Component Testing: Testing multiple units together, less tests compared Unit tests and still running fast
+
+	3. Integration Testing: Testing few components together
+		Login and update your profile picture
+		Search product and add to cart
+
+		Less tests compared to Component tests, slow as well.
+
+	4. End to End testing: Testing user flows
+		Very few tests, slowest test.
+
+	5000 unit tests 		-> 15 minutes
+	1000-2000 component tests 	-> 20-25 minutes
+	500 Integration Tests (Smoke Suite, Regression) -> 1-2 hours
+	30-50 End to End tests -> 1 hour
+
+
+// This is dev unit calculation total for user input
+function calculateTotal(price, quantity) {
+	if(quantiti <= 0) show('Value must be greater than 0');
+	return price * quantity; 
+}
+
+function updateTotal() {
+	const value = calculateTotal(5, 1000);
+	// Get existing total and update it with the new value added
+}
+
+<p id='total'>$2,300<p>
+
+
+// Unit tests
+test('Validate success when quantity and price are positive number' () => {
+	calculateTotal(10, 3).should.be(30);
+})
+
+test('Validate error when quantity is 0' () => {
+	calculateTotal(10, 0).should('be.error');
+})
+
+test('Validate error when quantity is negative number' () => {
+	calculateTotal(10, -5).should('be.error');
+})
+
+test('Validate error when price is 0' () => {
+	calculateTotal(10, 0).should('be.error');
+})
+
+test('Validate error when price is negative number' () => {
+	calculateTotal(10, -5).should('be.error');
+})
+
+// Component Tests
+test('')
+
+
+
+3 Amigos Meeting
+Tester - Developer - PO have a meeting for unclear AC
+Communication
