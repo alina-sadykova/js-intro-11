@@ -1,0 +1,48 @@
+
+04-13-2025 JIRA Intro
+
+JIRA is one of most commonly used Software for Software Development teams for management. 
+
+Benefits: 
+	Issue Tracking (Epic, User Story, Task/SubTask, Defect/Bug, Test Cases)
+	Bug Tracking
+	Agile Boards (Scrum, Kanban)
+	Backlogs (Product, Sprint)
+	Sprints
+	Graphics
+
+PO/SM and Upper Management is responsible for creating JIRA Projects, creating Boards, adding Epics and User stories and providing access to development team members.
+
+
+
+
+Azure DevOps: 
+
+
+
+5 developers: Alina, Beatrice, Eddie, Iryna, Rana
+2 testers: Victoria, Volkan
+
+
+Capacity: 7
+Velocity: 35
+
+
+Sprint Refinement:
+PO discusses acceptance criteria with development team and make estimates for upcoming sprint work (User Stories, PBIs, Tickets)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

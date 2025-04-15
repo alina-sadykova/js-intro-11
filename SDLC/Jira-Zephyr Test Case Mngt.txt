@@ -1,0 +1,85 @@
+
+
+04-14-2025 JIRA-Zephyr Test Case Management 
+
+
+TEST CASE 1: Validate Home Page Welcome section
+Go to https://www.techglobal-training.com/
+Validate a background image is visible
+Validate "Welcome to TechGlobal School Training" heading is visible
+Validate "This website is created by TechGlobal School Alumni who completed the 6 months of the Software Engineer Program with the guidance of founders and instructors." is visible
+Validate "See Our Programs" button is visible and navigates users to "https://www.techglobalschool.com/courses/"
+Validate "Be Part of TechGlobal Today" is visible
+
+
+
+TEST CASE 2: Validate Home Page About Us section
+Given user is on https://www.techglobal-training.com/
+Then user should see "Who we are" section with an icon and info
+And user should see "Our mission" section with an icon and info
+And user should see "Main goal" section with an icon and info
+
+
+
+TEST CASE REVIEW MEETING
+Scheduled for QA Team and PO to go over draft test cases to make sure all the acceptance criteria is covered by draft test cases.
+
+
+If you don't have much to do at the beginning sprint? do below
+Prioritize the tasks that you have and complete the most important
+Start writing your template test scripts and update them once actual development is ready
+
+
+
+Tell me about your sprint?
+What are the roles and responsibilities you have in a sprint?
+What do you do in a regular sprint?
+
+
+
+Do you have experience with SHIFT-LEFT TESTING or TEST-DRIVEN DEVELOPMENT?
+Main idea is: do testing as early as possible!
+
+SHIFT-LEFT TESTING: It is related to Test-Driven Development
+Write your scripts first
+Run scripts (all fails)
+Develop the feature
+Update and run scripts again (passes)
+
+
+***What do you do in a sprint?
+First couple days:
+	Read and understand requirements (AC) of the PBIs assigned to me.
+	Write your draft test cases (prepare RTM)
+	Do Test Case review meeting and get approved.
+	SOME ADDITIONALS: Create test data if needed, complete tech-debt for previos sprint, run Regression for QA environment.
+
+Mid-Sprint:
+	Developers finishes their tasks and I manually run my test cases that I created.
+	If I can start with automation for the passed manual tests, then I write scripts.
+	Report bugs if come across any while testing.
+
+Last couple days:
+	Prioritize work and complete most important ones.
+	Automate as much as possible and leave very less tech-debt to next sprint.
+
+Join all the scrum ceremonies, communicate and collaborate with your team members.
+Do documentation. Create your Pull Request and follow up with reviews, resolve conflicts, resolve feedbacks, complete your PR, delete your branch, pull the changes to local.
+
+
+PR policies:
+	Branch naming
+	How many reviewers to be added for PR
+	How do we maintain branches
+	Do we merge to main or another middle branch
+
+TEST CASE Policies:
+	Review meeting
+	RTM
+	How do we create test cases
+	Given user is on 
+
+
+
+
+

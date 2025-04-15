@@ -1,0 +1,96 @@
+
+
+04-12-2025 Testing Types 
+
+Unit vs Component vs Integration vs  E2E testing
+
+Unit Testing Tools (Developer): Jest, XUnit/NUnit, JUnit/TestNG, PyTest
+Integration/E2E Testing tools (SDETs): Cypress, Playwright
+
+Smoke vs Regression vs Sanity Testing
+
+
+Testing Pyramid:
+Have lots of Unit Testing
+Have good coverage with Component tests (Multiple Units tested together).
+Have less Integration Test
+Have very few E2E test
+
+
+Tell the difference between Unit vs Component vs Integration vs  E2E testing?
+What is Testing Pyramid and benefits it provide?
+What User Acceptance Testing? When is it performed?
+What are Non-Functional Testing Types? When are they performed?
+
+
+
+Non-Functional Testing:
+Performance Testing: Stress - Spike - Load - Endurance
+Security Testing:
+Accessibility Testing: 
+
+
+UAT: Functional and happens in STG before PROD
+
+
+IDEA
+Contract
+
+Set up 2-3 Teams
+
+1 Team: 5 dev - 2 QAs - PO
+
+Sprint-0
+Setting up development team: accesses, laptops
+
+Sprint-1
+5 PBIs 		-> 10 Test Cases - All automated -> 1-2 minutes
+
+Sprint-2    -> 10 Test Cases - 9 automated, 1 manual -> 3 minutes 1 minute
+
+
+
+Sprint-23   -> 5 Test Cases
+
+TOTAL: 230 Test Cases
+	200 Automated  -> 30 minutes
+	10-15 SMOKE - most critical functionalities like login, header, search -> 3 minutes
+
+	185-190 REGRESSION - 27 minutes
+
+	30 Manual Test -> 1-2 hour
+
+SMOKE and REGRESSION for your integration and e2e tests are running in Dev and QA 
+(Optional STG)
+
+
+STG: Non-Functional Testing - UAT
+FIRST RELEASE - MVP (Minumum Viable Product)
+
+
+NOTE: What is verification and validation in Software Testing?
+Verification: Are we building product right? 
+
+Functional Tests
+
+Requirements + Designs 		 	===				Developed Components by developers
+
+
+Validation: Are we building right product?
+UAT Testing
+
+
+
+Performance Tests are done with services - APIs (Backend)?
+
+Load Testing: You test your end-points within your load.
+Stress Testing: You test your end-points above your load capacity.
+Spike Testing: You test one specific end-point with a huge amount users hitting the same end-point at the same time.
+Endurance Testing:
+
+
+
+Ad Hoc Testing - Monkey Testing - Gorilla Testing - Exploratory Testing - Random Testing
+
+
+A/B Testing: 
