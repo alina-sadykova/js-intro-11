@@ -37,7 +37,7 @@ console.log(arrFactorial([])); //   		    -> []
 function replaceFirstLast(str) {
   let firstChar = str[0];
   let lastChar = str.at(-1);
-  if()
+
   return lastChar + str.slice(1, str.length - 1) + firstChar;
 }
 console.log(replaceFirstLast("")); //  			    -> ""
