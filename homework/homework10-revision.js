@@ -11,7 +11,7 @@ splitString("12", 1)  -> "1 2"
 */
 
 //str = "JavaScript"
-//container = 'Ja Ja '
+//container = 'Ja va '
 
 const splitString = (str, num) => {
   if (str.length < num || str.length % num !== 0) return "";
