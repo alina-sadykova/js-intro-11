@@ -172,6 +172,7 @@ reverseNumber(111) 	-> 111
 function reverseNumber(num) {
   const array = [];
   while (num > 0) {
+    console.log(">>", num % 10);
     array.push(num % 10);
     num = Math.floor(num / 10);
   }
@@ -220,15 +221,17 @@ splitString("Hello", 6) 		-> ""
 splitString("12", 1) 		-> "1 2"
 */
 function splitString(str, num) {
-  if (str.length < num) return "";
-  if (str.length === num) return str;
-  if (str.length % num === 0) {
-    return str.slice(0, num) + " " + str.slice(-num);
-  } else {
-    return "";
+  if (str.length < num || str.length % num !== 0) return "";
+
+  let result = "";
+  while (str.length > 0) {
+    result += str.slice(0, num) + " ";
+    str = str.slice(num);
   }
+  return result.trim();
 }
 console.log(splitString("JavaScript", 5)); //-> "JavaS cript"
+console.log(splitString("JavaScript", 2)); //-> "JavaS cript"
 console.log(splitString("Java", 2)); //-> "Ja va"
 console.log(splitString("Automation", 3)); //-> ""
 console.log(splitString("Hello", 6)); //-> ""
