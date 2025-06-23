@@ -210,3 +210,9 @@ console.log(fizzBuzz(13, 18));
 console.log(fizzBuzz(12, 5));
 console.log(fizzBuzz(5, 5));
 console.log(fizzBuzz(9, 6));
+
+function reverseStringWords(str) {
+  const arr = str.trim().split(" ");
+  return arr.map((char) => char.split("").reverse().join("")).join(" ");
+}
+console.log(reverseStringWords("Hello World"));

@@ -246,7 +246,7 @@ function factorial(number) {
 
 // ----OPTION 4
 // const factorial = (num) => {
-//     let total = 1;
+//  let total = 1;
 
 //     for(let i = 2; i <= num; i++){
 //         total *= i;
